@@ -1,0 +1,597 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 35px;
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-left:90px;
+    padding: 0 85px;
+}
+.list li{
+    list-style: none;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #141517;
+    font-weight: 600;
+    padding: 50px 21px;
+    position: relative;
+    top: 10px;
+}
+.list .menu{
+    position: relative;
+}
+.list .menu li{
+    padding: 1px 20px;
+}
+.list .menu{
+    position: absolute;
+    flex-direction: column;
+    justify-content: e;
+    width: 170px;
+    top:70px;
+    right:-90px;
+    padding:20px 0;
+    background-color: #fff;
+    display: none;
+    transition: all .5s;
+}
+.list .subMenu li a:hover{
+    color:#ff2020;
+}
+.list .subMenu:hover .menu {
+    display: block;
+}
+.icons{
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+.icons i{
+    padding: 0 15px;
+
+}
+.icons i:hover{
+   color: #ff2020;
+
+}
+.list ul li a:hover{
+    color: #ff2020;
+}
+.lates{
+    position: relative;
+}
+.lates::before{
+    position: absolute;
+    content: "HOT";
+    background: #ff003c;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 10px;
+    top:20px;
+    right: -13px;
+    transition: all .2s ease-out 0s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.columnBtn a{
+    display: inline-block;
+    padding: 15px 40px;
+    background:#4a4a4b; 
+    border: 1px solid #4a4a4b ; 
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600; 
+}
+.btnJoin{
+    position: relative;
+    z-index:1;
+}
+.btnJoin::after{
+    content: "";
+    width:0;
+    height: 100%;
+    position: absolute;
+    background-color:#ff2020;
+    inset: 0;
+    z-index:-1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btnJoin:hover::after{
+    width:100%;
+}
+.columnBtn a:hover{
+    color: white;
+}
+.section1{
+    background: #f0f0f2;
+    padding: 0 80px;
+    height: 800px;
+    overflow: hidden;
+}
+.sec1Text{
+    margin-top: 90px;
+    padding: 70px 10px;
+}
+.sec1Text h1{
+    font-size:60px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.sec1Img {
+    width:50%;
+    margin-left: 90px;
+}
+.sec1Text p{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #212025;
+    margin-bottom: 60px;
+    padding-right: 50px;
+}
+.sec1Img img{
+    animation-name: scale;
+    animation-duration:1s;
+    animation-delay:.4s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale {
+   0%{
+    transform: scale(1.1);
+   }
+   50%{
+    transform: scale(1);
+   }
+   100%{
+    transform: scale(1.1);
+   }
+}
+.image {
+    padding: 70px 0;
+  }
+ 
+.section2 h2{
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    font-size: 37px;
+}
+.sec2Img{
+    margin-top: 60px;
+}
+.cardBody a{
+    color: #444444;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+    display: block;
+    margin-top:25px;
+}
+.cardBody span{
+    color: #ff2020;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sec2Img{
+    overflow: hidden;
+}
+.sec2Img img{
+    transform: scale(1.1);
+    transition: all .5s
+}
+.sec2Img:hover img{
+    transform: scale(1);
+}
+.se3Row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3 .row{
+    margin: 0;
+}
+
+.secCol{
+ display:inline-block;
+ flex-direction: column;
+}
+.section4{
+    padding:70px 50px;
+    margin-top: 71px;
+}
+.section4 .text{
+    text-align: center;
+    padding: 20px 45px;
+}
+.text h2{
+    color: #000;
+    font-size: 37px;
+    line-height:2;
+    font-weight: 700;
+}
+.text p{
+    color: #777;
+    font-size: 16px;
+    line-height: 2;
+}
+.imgbox{
+    position: relative;
+    border-bottom: 3px solid  #ff2020;
+    padding: 10px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition:all 0.5s ease;
+
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay .fa-heart{
+    font-size: 30px;
+    font-weight: 200;
+    color: #212529;
+    position: absolute;
+    top:30px;
+    right:20px;
+}
+.overlay .btn{
+    position: absolute;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    bottom:-50px;
+    width: 100%;
+    height:70px;
+    background-color:  #ff2020;
+    color: white;
+    font-size:18px;
+    transition:all 0.5s ease;
+}
+.imgbox:hover .btn{
+    bottom: 0;
+}
+.section4 a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2;
+}
+span{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+.button{
+   display: flex;
+   justify-content: center;
+   margin-top: 55px;
+}
+.btnBox{
+    width:300px;
+    height:66px;
+    font-size:18px;
+    color: white;
+    background-color: #ff2020;
+    position: relative;
+    z-index: 1;
+}
+.btnBox::after{
+    content: "";
+    background-color: gray;
+    width:0%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btnBox:hover::after{
+    width: 100%;
+}
+.section5{
+    margin-top: 70px;
+    position: relative;
+}
+.contactSec5{
+    background-image: url(../img/sectin_bg1.png.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.link{
+    text-align: center;
+    padding:90px 0;
+    margin-top: 90px;
+}
+.link a{
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    line-height: 85px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-left: 5px;
+    padding-top: 1px;
+    border: 1px solid #fff;
+    margin-top: 90px;
+}
+.next{
+    position:absolute;
+    bottom: 0;
+    background-image: url(../img/vidoe_more.png.webp);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    display: flex;
+    justify-content: space-between;
+    width: 29%;
+    padding: 40px 60px;
+}
+.next h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    /* position: relative; */
+    display:inline-block ;
+}
+.next i{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top:32px;
+    right:35px;
+}
+.section6{
+    padding: 70px 45px;
+    margin-top: 90px;
+}
+.section6 .textSec6{
+  padding: 60px 0;
+}
+.textSec6 h2{
+    margin-top:75px;
+    color: #000;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.textSec6 p{
+    color: #777;
+    line-height:2;
+}
+.btn6{
+    justify-content: start;
+ }
+ .btnBox{
+     width:220px;
+ }
+.text7{
+    margin-left:75px;
+}
+.section8{
+    padding: 50px 60px;
+    margin-bottom: 80px;
+    background: #ff2020;
+    width: 80%;
+    margin: 80px auto;
+}
+.section8 .iconsSec8{
+    font-size: 40px;
+    color: #ffff;  
+}
+.section8 .textSec8 h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.section8 .textSec8 p{
+    font-size: 16px;
+    color: #d3d1d1;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+footer{
+    background: #f0f0f2a1;
+    padding: 90px 60px;
+}
+.container{
+    padding: 40px 0;
+}
+.imgFooter{
+    width: 125px;
+    margin-bottom:33px;
+}
+footer .text{
+    color: #868c98;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.footText h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 29px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif; 
+    margin-left:30px; 
+}
+.footText ul li a{
+    color: #868c98;
+    font-weight: 300;
+    transition: all .3s ease-out 0s;
+}
+.footText ul li{
+    transition: all .3s ease-out 0s;
+}
+.footText ul li:hover{
+    transform:translateX(10px);
+}
+.footText ul li a:hover{
+    color: #ff2020;
+}
+.linkText a{
+    color: #ff2020;
+}
+.finaly{
+    margin-top:50px;
+    margin-bottom: 15px;
+}
+.endFoot{
+    text-align: end;
+}
+.endFoot i{
+    padding: 0 5px;
+    color: #222222;
+    font-size: 14px;
+    transition: all .3s ease-out 0s;
+}
+.endFoot i:hover{
+    transform:rotateY(140deg);
+    color: #ff2020;
+}
+@media screen and (max-width:992px){
+        .head{
+            align-items: start;
+            padding:0 10px;
+        }
+        .list ul{
+            margin-left:10px;
+            padding: 0 40px;
+        }
+        .list li{
+            padding: 50px 21px;
+        }
+        .icons{
+            font-size: 10px;
+            margin-left:15px;
+            margin-top: 60px;
+        }
+        .logo{
+            margin-top:50px;
+        }
+        .sec1Text h1{
+            font-size:40px;
+            margin-top: 60px;
+            margin-bottom: 25px;
+        }
+        .section8{
+            width:90%;
+        }
+        .section8 .textSec8 h6{
+            margin-top: 20px;
+        }
+}
+@media screen and (max-width:800px){
+     .head{
+            padding:0 10px;
+        }
+        .list ul{
+            margin-left:85px;
+            padding: 0 40px;
+        }
+        .list li{
+            padding:0 21px;
+            top: -20px;
+        }
+        .icons{
+           display: none;
+        }
+        .logo{
+            margin-top:70px;
+        }
+        .lates::before{
+            top:-20px;
+            right: -13px;
+        }
+        .sec1Text h1{
+            font-size:20px;
+            margin-top:10px;
+            margin-bottom: 25px;
+        }
+        .contactSec5{
+            height: 60vh;
+        }    
+}
+@media screen and (max-width:768px){
+    .head{
+        padding:0 15px;
+    }
+    .list ul{
+        margin-left:70px;
+        padding: 0 50px;
+    }
+    .list li{
+        list-style: none;
+        font-size:14px;
+        padding: 50px 21px;
+        top: -66px;
+    }
+    .lates::before{
+      display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .head{
+        padding:0 1px;
+    }
+    .list ul{
+        margin-left:1px;
+    }
+    .list li{
+        top:5px;
+    }
+    .sec1Img{
+        display: none;
+    }
+    .next{
+        width: 50%;
+    }
+    
+}

@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 35px;
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-left:90px;
+    padding: 0 85px;
+}
+.list li{
+    list-style: none;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #141517;
+    font-weight: 600;
+    padding: 50px 21px;
+    position: relative;
+    top: 10px;
+}
+.list .menu{
+    position: relative;
+}
+.list .menu li{
+    padding: 1px 20px;
+}
+.list .menu{
+    position: absolute;
+    flex-direction: column;
+    justify-content: e;
+    width: 170px;
+    top:70px;
+    right:-90px;
+    padding:20px 0;
+    background-color: #fff;
+    display: none;
+    transition: all .5s;
+}
+.list .subMenu li a:hover{
+    color:#ff2020;
+}
+.list .subMenu:hover .menu {
+    display: block;
+}
+.icons{
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+.icons i{
+    padding: 0 15px;
+
+}
+.icons i:hover{
+   color: #ff2020;
+
+}
+.list ul li a:hover{
+    color: #ff2020;
+}
+.lates{
+    position: relative;
+}
+.lates::before{
+    position: absolute;
+    content: "HOT";
+    background: #ff003c;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 10px;
+    top:20px;
+    right: -13px;
+    transition: all .2s ease-out 0s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.sectionShop1{
+    background-image: url(../img/about_hero.png.webp);
+    background-size: cover;
+    padding: 60px 50px;
+    margin-top: 60px;
+}
+.text{
+    margin-top:80px;
+}
+.sectionShop1 .text h2{
+    text-align: center;
+    padding: 70px 0;
+    margin-top:80px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #0b1c39;
+}
+.shop2{
+    padding: 60px 40px;
+    margin-top: 50px;
+}
+.links a{
+    font-size: 16px;
+    margin-left:22px;
+    color: #1b1b1b;
+}
+.borderLink{
+    border-bottom: 2px solid #ff5757;
+}
+.select{
+    margin-left:80px;
+    padding: 0 60px;
+}
+.shop2 select{
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    color: #333333;
+    height:35px;
+    width:165px;
+    line-height: 31px;
+    font-size: 14px;
+    margin-left: 80px;
+}
+.imgbox{
+    margin-top:35px;
+    position: relative;
+    border-bottom: 3px solid  #ff2020;
+    padding: 10px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition:all 0.5s ease;
+
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay .fa-heart{
+    font-size: 30px;
+    font-weight: 200;
+    color: #212529;
+    position: absolute;
+    top:30px;
+    right:20px;
+}
+.overlay .btn{
+    position: absolute;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    bottom:-50px;
+    width: 100%;
+    height:70px;
+    background-color:  #ff2020;
+    color: white;
+    font-size:18px;
+    transition:all 0.5s ease;
+}
+.imgbox:hover .btn{
+    bottom: 0;
+}
+.section4 a{
+    text-decoration: none;
+    color: #444444;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2;
+}
+span{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+.section8{
+    padding: 50px 60px;
+    margin-bottom: 80px;
+    background: #ff2020;
+    width: 80%;
+    margin: 80px auto;
+}
+.section8 .iconsSec8{
+    font-size: 40px;
+    color: #ffff;  
+}
+.section8 .textSec8 h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.section8 .textSec8 p{
+    font-size: 16px;
+    color: #d3d1d1;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+footer{
+    background: #f0f0f2a1;
+    padding: 90px 60px;
+}
+.container{
+    padding: 40px 0;
+}
+.imgFooter{
+    width: 125px;
+    margin-bottom:36px;
+}
+footer .textImg{
+    color: #868c98;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.footText h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 29px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif; 
+    margin-left:30px; 
+}
+.footText ul li a{
+    color: #868c98;
+    font-weight: 300;
+    transition: all .3s ease-out 0s;
+}
+.footText ul li{
+    transition: all .3s ease-out 0s;
+}
+.footText ul li:hover{
+    transform:translateX(10px);
+}
+.footText ul li a:hover{
+    color: #ff2020;
+}
+.linkText a{
+    color: #ff2020;
+}
+.finaly{
+    margin-top:50px;
+    margin-bottom: 15px;
+}
+.endFoot{
+    text-align: end;
+}
+.endFoot i{
+    padding: 0 5px;
+    color: #222222;
+    font-size: 14px;
+    transition: all .3s ease-out 0s;
+}
+.endFoot i:hover{
+    transform:rotateY(140deg);
+    color: #ff2020;
+}
+@media screen and (max-width:992px){
+    .head{
+        align-items: start;
+        padding:0 10px;
+    }
+    .list ul{
+        margin-left:10px;
+        padding: 0 40px;
+    }
+    .list li{
+        padding: 50px 21px;
+    }
+    .icons{
+        color: #000000;
+        font-size: 10px;
+        cursor: pointer;
+        margin-left:15px;
+        margin-top: 60px;
+    }
+    .logo{
+        margin-top:50px;
+    }
+    .section8{
+        width:90%;
+    }
+    .section8 .textSec8 h6{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .head{
+        padding:0 10px;
+    }
+    .list ul{
+        margin-left:85px;
+        padding: 0 40px;
+    }
+    .list li{
+        padding:0 21px;
+        top: -20px;
+    }
+    .icons{
+       display: none;
+    }
+    .lates::before{
+        top:-20px;
+        right: -13px;
+    }
+    .logo{
+        margin-top:70px;
+    }
+    .select{
+        margin-left:10px;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .head{
+        padding:0 15px;
+    }
+    .list ul{
+        margin-left:70px;
+        padding: 0 50px;
+    }
+    .list li{
+        list-style: none;
+        font-size:14px;
+        padding: 50px 21px;
+        top: -66px;
+    }
+    .links a{
+        margin-left:15px;
+    }
+    .lates::before{
+        display: none;
+      }
+    .select{
+        margin-left:30px;
+        padding: 0 10px;
+    }
+    .shop2 select{
+        height:35px;
+        width:140px;
+        line-height: 31px;
+        font-size: 14px;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:600px){
+    .head{
+        padding:0 0;
+    }
+    .list ul{
+        margin-left:10px;
+    }
+    .list li{
+        font-size: 10px;
+        top:-12px;
+        left:90px;
+        padding: 0 13px;
+    }
+    .select{
+        margin-left:10px;
+        padding: 30px 10px;
+    }
+    .shop2 select{
+        height:35px;
+        width:165px;
+        line-height: 31px;
+        font-size: 14px;
+        margin-left:5px;
+    }
+}

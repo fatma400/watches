@@ -13,92 +13,6 @@ a{
     text-decoration: none;
     color: black;
 }
-.head{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 35px;
-}
-.list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    margin-left:90px;
-    padding: 0 85px;
-}
-.list li{
-    list-style: none;
-    font-size: 16px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #141517;
-    font-weight: 600;
-    padding: 50px 21px;
-    position: relative;
-    top: 10px;
-}
-.list .menu{
-    position: relative;
-}
-.list .menu li{
-    padding: 1px 20px;
-}
-.list .menu{
-    position: absolute;
-    flex-direction: column;
-    justify-content: e;
-    width: 170px;
-    top:70px;
-    right:-90px;
-    padding:20px 0;
-    background-color: #fff;
-    display: none;
-    transition: all .5s;
-}
-.list .subMenu li a:hover{
-    color:#ff2020;
-}
-.list .subMenu:hover .menu {
-    display: block;
-}
-.icons{
-    color: #000000;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 80px;
-}
-.icons i{
-    padding: 0 15px;
-
-}
-.icons i:hover{
-   color: #ff2020;
-
-}
-.list ul li a:hover{
-    color: #ff2020;
-}
-.lates{
-    position: relative;
-}
-.lates::before{
-    position: absolute;
-    content: "HOT";
-    background: #ff003c;
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 10px;
-    top:20px;
-    right: -13px;
-    transition: all .2s ease-out 0s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 3px 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 .sectionShop1{
     background-image: url(../img/about_hero.png.webp);
     background-size: cover;
@@ -281,107 +195,60 @@ footer .textImg{
     color: #ff2020;
 }
 @media screen and (max-width:992px){
-    .head{
-        align-items: start;
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:10px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding: 50px 21px;
-    }
-    .icons{
-        color: #000000;
-        font-size: 10px;
-        cursor: pointer;
-        margin-left:15px;
-        margin-top: 60px;
-    }
     .logo{
-        margin-top:50px;
+        padding: 0;
     }
-    .textContact h3{
-        font-size:14px;
+    .gray{
+        padding: 30px 0;
     }
-    .textContact p{
-        font-size:14px;
-    }
-    .iconsContact i{
-        margin-left:30px;
-    }
-    .info{
-      padding: 0 60px;
+    .contGray{
+        padding: 15px 0;
     }
 }
 @media screen and (max-width:800px){
-    .head{
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:85px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding:0 21px;
-        top:-20px;
-    }
-    .icons{
-       display: none;
-    }
-    .lates::before{
-        top:-20px;
-        right: -13px;
-    }
-    .logo{
-        margin-top:50px;
+    .sectionForm h2{
+        font-size:20px;
     }
     .textContact h3{
-        font-size:12px;
+        font-size:14px;
     }
     .textContact p{
-        font-size:11px;
+        font-size: 14px;
     }
     .iconsContact i{
+        font-size:20px;
         margin-left:20px;
     }
     .info{
-      padding: 0 20px;
+      margin-left: 50px;
+      padding: 0 30px;
     }
 }
-@media screen and (max-width:768px){
-    .head{
-        padding:0 15px;
+@media screen and (max-width:300px){
+    .sectionShop1{
+        padding:15px 10px;
+        margin-top: 10px;
     }
-    .list ul{
-        margin-left:70px;
-        padding: 0 50px;
+    .text{
+        margin-top:10px;
     }
-    .list li{
-        list-style: none;
-        font-size:14px;
-        padding: 50px 21px;
-        top: -66px;
+    .sectionShop1 .text h2{
+        padding:10px 0;
+        margin-top:10px;
+        font-size:40px;
     }
-    .links a{
-        margin-left:15px;
+    .gray{
+        padding:10px 10px;
     }
-    .lates::before{
-        display: none;
-      }
-}
-@media screen and (max-width:600px){
-    .head{
-        padding:0 0;
+    .contGray{
+        padding:5px 10px;
+        margin-top:10px;
+        height:300px;
     }
-    .list ul{
-        margin-left:10px;
+    .contGray h3{
+        font-size:18px;
     }
-    .list li{
-        font-size: 10px;
-        top:-12px;
-        left:90px;
-        padding: 0 13px;
+    .contGray img{
+        margin-top:10px;
     }
 }

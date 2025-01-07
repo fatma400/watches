@@ -13,120 +13,16 @@ a{
     text-decoration: none;
     color: black;
 }
-.head{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 35px;
-}
-.list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    margin-left:90px;
-    padding: 0 85px;
-}
-.list li{
-    list-style: none;
-    font-size: 16px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #141517;
-    font-weight: 600;
-    padding: 50px 21px;
-    position: relative;
-    top: 10px;
-}
-.list .menu{
-    position: relative;
-}
-.list .menu li{
-    padding: 1px 20px;
-}
-.list .menu{
-    position: absolute;
-    flex-direction: column;
-    justify-content: e;
-    width: 170px;
-    top:70px;
-    right:-90px;
-    padding:20px 0;
-    background-color: #fff;
-    display: none;
-    transition: all .5s;
-}
-.list .subMenu li a:hover{
-    color:#ff2020;
-}
-.list .subMenu:hover .menu {
-    display: block;
-}
-.icons{
-    color: #000000;
-    font-size: 16px;
-    cursor: pointer;
+nav .navbar-collapse{
     margin-left: 80px;
 }
-.icons i{
-    padding: 0 15px;
-
-}
-.icons i:hover{
-   color: #ff2020;
-
-}
-.list ul li a:hover{
-    color: #ff2020;
-}
-.lates{
-    position: relative;
-}
-.lates::before{
-    position: absolute;
-    content: "HOT";
-    background: #ff003c;
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 10px;
-    top:20px;
-    right: -13px;
-    transition: all .2s ease-out 0s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 3px 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.nav-item .nav-link{
+    color: black;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    font-size:17px;
+    margin-left: 30px;
     font-weight: 500;
-}
-.columnBtn a{
-    display: inline-block;
-    padding: 15px 40px;
-    background:#4a4a4b; 
-    border: 1px solid #4a4a4b ; 
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600; 
-}
-.btnJoin{
-    position: relative;
-    z-index:1;
-}
-.btnJoin::after{
-    content: "";
-    width:0;
-    height: 100%;
-    position: absolute;
-    background-color:#ff2020;
-    inset: 0;
-    z-index:-1;
-    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
-.btnJoin:hover::after{
-    width:100%;
-}
-.columnBtn a:hover{
-    color: white;
 }
 .section1{
     background: #f0f0f2;
@@ -497,101 +393,102 @@ footer .text{
     color: #ff2020;
 }
 @media screen and (max-width:992px){
-        .head{
-            align-items: start;
-            padding:0 10px;
-        }
-        .list ul{
-            margin-left:10px;
-            padding: 0 40px;
-        }
-        .list li{
-            padding: 50px 21px;
-        }
-        .icons{
-            font-size: 10px;
-            margin-left:15px;
-            margin-top: 60px;
-        }
-        .logo{
-            margin-top:50px;
-        }
-        .sec1Text h1{
-            font-size:40px;
-            margin-top: 60px;
-            margin-bottom: 25px;
-        }
-        .section8{
-            width:90%;
-        }
-        .section8 .textSec8 h6{
-            margin-top: 20px;
-        }
-}
-@media screen and (max-width:800px){
-     .head{
-            padding:0 10px;
-        }
-        .list ul{
-            margin-left:85px;
-            padding: 0 40px;
-        }
-        .list li{
-            padding:0 21px;
-            top: -20px;
-        }
-        .icons{
-           display: none;
-        }
-        .logo{
-            margin-top:70px;
-        }
-        .lates::before{
-            top:-20px;
-            right: -13px;
-        }
-        .sec1Text h1{
-            font-size:20px;
-            margin-top:10px;
-            margin-bottom: 25px;
-        }
-        .contactSec5{
-            height: 60vh;
-        }    
-}
-@media screen and (max-width:768px){
-    .head{
-        padding:0 15px;
+    .logo{
+        padding: 0;
     }
-    .list ul{
-        margin-left:70px;
-        padding: 0 50px;
+    .section1{
+        padding: 0 40px;
     }
-    .list li{
-        list-style: none;
-        font-size:14px;
-        padding: 50px 21px;
-        top: -66px;
+    .sec1Text{
+        margin-top: 10px;
+        padding: 10px 10px;
     }
-    .lates::before{
-      display: none;
+    .sec1Text h1{
+        font-size:50px;
     }
+     
 }
 @media screen and (max-width:600px){
-    .head{
-        padding:0 1px;
-    }
-    .list ul{
-        margin-left:1px;
-    }
-    .list li{
-        top:5px;
+    .section1{
+       height: auto;
     }
     .sec1Img{
         display: none;
     }
-    .next{
-        width: 50%;
+    .section5{
+        margin-top:10px;
     }
-    
+    .link{
+        margin-top:40px;
+    }
+    .next{
+        width:50%;
+        padding: 30px 10px;
+    }
+    .next h3{
+        font-size:14px;
+    }
+    .section6 h2,.section7 h2{
+        font-size:25px;
+    }
+}
+@media screen and (max-width:400px){
+    .sec1Text h1{
+        font-size:20px;
+        margin-top:20px;
+        margin-bottom: 25px;
+    }
+    .sec1Text p{
+        font-size:13px;
+        margin-bottom:20px;
+        padding-right: 10px;
+    }
+    .section2 h2{
+        font-size:25px;
+    }
+    .section4{
+        padding:20px 10px;
+        margin-top: 20px;
+    }
+    .section4 .text{
+        padding: 10px 15px;
+    }
+    .text h2{
+        font-size:20px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    .overlay .btn{
+        height:50px;
+        font-size:15px;
+    }
+    .text a{
+        font-size: 20px;
+    }
+    .link{
+        margin-top:40px;
+    }
+    .next{
+        width:80%;
+        padding: 30px 60px;
+    }
+    .next i{
+        font-size:25px;
+        top:27px;
+        right:35px;
+    }
+    .section8{
+        padding:10px 20px;
+    }
+    .section8 .iconsSec8{
+        font-size:28px;
+    }
+    .section8 .textSec8 h6{
+        color: #fff;
+        font-size:18px;
+    }
+    .section8 .textSec8 p{
+        font-size: 16px;
+    }
 }

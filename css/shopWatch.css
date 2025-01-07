@@ -13,92 +13,7 @@ a{
     text-decoration: none;
     color: black;
 }
-.head{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 35px;
-}
-.list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    margin-left:90px;
-    padding: 0 85px;
-}
-.list li{
-    list-style: none;
-    font-size: 16px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #141517;
-    font-weight: 600;
-    padding: 50px 21px;
-    position: relative;
-    top: 10px;
-}
-.list .menu{
-    position: relative;
-}
-.list .menu li{
-    padding: 1px 20px;
-}
-.list .menu{
-    position: absolute;
-    flex-direction: column;
-    justify-content: e;
-    width: 170px;
-    top:70px;
-    right:-90px;
-    padding:20px 0;
-    background-color: #fff;
-    display: none;
-    transition: all .5s;
-}
-.list .subMenu li a:hover{
-    color:#ff2020;
-}
-.list .subMenu:hover .menu {
-    display: block;
-}
-.icons{
-    color: #000000;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 80px;
-}
-.icons i{
-    padding: 0 15px;
 
-}
-.icons i:hover{
-   color: #ff2020;
-
-}
-.list ul li a:hover{
-    color: #ff2020;
-}
-.lates{
-    position: relative;
-}
-.lates::before{
-    position: absolute;
-    content: "HOT";
-    background: #ff003c;
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 10px;
-    top:20px;
-    right: -13px;
-    transition: all .2s ease-out 0s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 3px 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 .sectionShop1{
     background-image: url(../img/about_hero.png.webp);
     background-size: cover;
@@ -285,115 +200,66 @@ footer .textImg{
     color: #ff2020;
 }
 @media screen and (max-width:992px){
-    .head{
-        align-items: start;
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:10px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding: 50px 21px;
-    }
-    .icons{
-        color: #000000;
-        font-size: 10px;
-        cursor: pointer;
-        margin-left:15px;
-        margin-top: 60px;
-    }
-    .logo{
-        margin-top:50px;
-    }
-    .section8{
-        width:90%;
-    }
-    .section8 .textSec8 h6{
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width:800px){
-    .head{
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:85px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding:0 21px;
-        top: -20px;
-    }
-    .icons{
-       display: none;
-    }
-    .lates::before{
-        top:-20px;
-        right: -13px;
-    }
-    .logo{
-        margin-top:70px;
-    }
     .select{
-        margin-left:10px;
+        margin-left:20px;
         padding: 0 30px;
     }
-}
-@media screen and (max-width:768px){
-    .head{
-        padding:0 15px;
-    }
-    .list ul{
-        margin-left:70px;
-        padding: 0 50px;
-    }
-    .list li{
-        list-style: none;
-        font-size:14px;
-        padding: 50px 21px;
-        top: -66px;
-    }
-    .links a{
-        margin-left:15px;
-    }
-    .lates::before{
-        display: none;
-      }
-    .select{
-        margin-left:30px;
-        padding: 0 10px;
-    }
     .shop2 select{
-        height:35px;
-        width:140px;
-        line-height: 31px;
-        font-size: 14px;
-        margin-left: 80px;
+        margin-left:20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .section8{
+        padding:20px 10px;
+    }
+    .section8 .iconsSec8{
+        font-size:30px;
+    }
+    .section8 .textSec8 h6{
+        font-size:18px;
+    }
+    .section8 .textSec8 p{
+        font-size:16px;
     }
 }
 @media screen and (max-width:600px){
-    .head{
-        padding:0 0;
+    .shop2 select{
+        margin-left:0;
+        margin-top: 20px;
     }
-    .list ul{
+}
+@media screen and (max-width:400px){
+    .sectionShop1{
+        padding:20px 10px;
+        margin-top:10px;
+    }
+    .text{
+        margin-top:20px;
+    }
+    .sectionShop1 .text h2{
+        padding: 20px 0;
+        margin-top:10px;
+        font-size:40px;
+    }
+    .shop2{
+        padding:20px 10px;
+        margin-top:10px;
+    }
+    .links a{
+        font-size:16px;
         margin-left:10px;
-    }
-    .list li{
-        font-size: 10px;
-        top:-12px;
-        left:90px;
-        padding: 0 13px;
     }
     .select{
         margin-left:10px;
-        padding: 30px 10px;
+        padding: 0 10px;
     }
-    .shop2 select{
-        height:35px;
-        width:165px;
-        line-height: 31px;
-        font-size: 14px;
-        margin-left:5px;
+    .text{
+        margin-left: 20px;
+    }
+    .text a{
+        font-size:18px;
+    }
+    .overlay .btn{
+        height:50px;
     }
 }

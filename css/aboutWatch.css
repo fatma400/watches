@@ -13,92 +13,6 @@ a{
     text-decoration: none;
     color: black;
 }
-.head{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 35px;
-}
-.list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    margin-left:90px;
-    padding: 0 85px;
-}
-.list li{
-    list-style: none;
-    font-size: 16px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #141517;
-    font-weight: 600;
-    padding: 50px 21px;
-    position: relative;
-    top: 10px;
-}
-.list .menu{
-    position: relative;
-}
-.list .menu li{
-    padding: 1px 20px;
-}
-.list .menu{
-    position: absolute;
-    flex-direction: column;
-    justify-content: e;
-    width: 170px;
-    top:70px;
-    right:-90px;
-    padding:20px 0;
-    background-color: #fff;
-    display: none;
-    transition: all .5s;
-}
-.list .subMenu li a:hover{
-    color:#ff2020;
-}
-.list .subMenu:hover .menu {
-    display: block;
-}
-.icons{
-    color: #000000;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 80px;
-}
-.icons i{
-    padding: 0 15px;
-
-}
-.icons i:hover{
-   color: #ff2020;
-
-}
-.list ul li a:hover{
-    color: #ff2020;
-}
-.lates{
-    position: relative;
-}
-.lates::before{
-    position: absolute;
-    content: "HOT";
-    background: #ff003c;
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 10px;
-    top:20px;
-    right: -13px;
-    transition: all .2s ease-out 0s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 3px 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 .sectionShop1{
     background-image: url(../img/about_hero.png.webp);
     background-size: cover;
@@ -285,97 +199,68 @@ footer .textImg{
     transform:rotateY(140deg);
     color: #ff2020;
 }
-@media screen and (max-width:992px){
-    .head{
-        align-items: start;
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:10px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding: 50px 21px;
-    }
-    .icons{
-        color: #000000;
-        font-size: 10px;
-        cursor: pointer;
-        margin-left:15px;
-        margin-top: 60px;
-    }
-    .logo{
-        margin-top:50px;
-    }
-    .section8{
-        width:90%;
-    }
-    .section8 .textSec8 h6{
-        margin-top: 20px;
-    }
-}
-@media screen and (max-width:800px){
-    .head{
-        padding:0 10px;
-    }
-    .list ul{
-        margin-left:85px;
-        padding: 0 40px;
-    }
-    .list li{
-        padding:0 21px;
-        top:-20px;
-    }
-    .icons{
-       display: none;
-    }
-    .lates::before{
-        top:-20px;
-        right: -13px;
-    }
-    .logo{
-        margin-top:50px;
-    }
-}
-@media screen and (max-width:768px){
-    .head{
-        padding:0 15px;
-    }
-    .list ul{
-        margin-left:70px;
-        padding: 0 50px;
-    }
-    .list li{
-        list-style: none;
-        font-size:14px;
-        padding: 50px 21px;
-        top: -66px;
-    }
-    .links a{
-        margin-left:15px;
-    }
-    .lates::before{
-        display: none;
-      }
-}
 @media screen and (max-width:600px){
-    .head{
-        padding:0 0;
+    .section5{
+        margin-top:10px;
     }
-    .list ul{
-        margin-left:10px;
-    }
-    .list li{
-        font-size: 10px;
-        top:-12px;
-        left:90px;
-        padding: 0 13px;
+    .link{
+        margin-top:40px;
     }
     .next{
-        width:40%;
-        padding:30px 40px;
+        width:50%;
+        padding: 30px 10px;
+    }
+    .next h3{
+        font-size:14px;
+    }
+}
+@media screen and (max-width:300px){
+    .sectionShop1{
+        padding:10px 20px;
+        margin-top:10px;
+    }
+    .text{
+        margin-top:10px;
+    }
+    .sectionShop1 .text h2{
+        padding:10px 0;
+        margin-top:10px;
+        font-size:40px;
+    }
+    .section2{
+        padding:20px 10px;
+        margin-top:10px;
+    }
+    .section2 h4{
+        font-size:20px;
+    }
+    .section2 p{
+        font-size:12px;
+    }
+    .link{
+        margin-top:40px;
+    }
+    .next{
+        width:80%;
+        padding: 30px 60px;
     }
     .next i{
-        top:26px;
+        font-size:25px;
+        top:27px;
+        right:35px;
+    }
+    .section8{
+        padding:15px 10px;
+        margin:20px auto;
+    }
+    .section8 .iconsSec8{
+        font-size:30px;
+    }
+    .section8 .textSec8 h6{
+        color: #fff;
+        font-size:18px;
+    }
+    .section8 .textSec8 p{
+        font-size:14px;
     }
 }
